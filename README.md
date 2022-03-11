@@ -14,7 +14,7 @@
 #### 参数
 * <code>method</code> API方法。
 * <code>link</code> 短链接。
-* <code>groupid</code> 微信群邀请二维码的编号（去掉"https://wechat.qq.com/g/"的剩余部分）。
+* <code>groupid</code> 微信群邀请二维码的编号（去掉 "https://weixin.qq.com/g/" 的剩余部分）。
 * <code>note</code> 备注信息。
 * <code>count</code> 当前二维码的有效访问次数。
 * <code>totalcount</code> 短链接总计有效访问次数。
