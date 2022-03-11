@@ -14,15 +14,17 @@
 #### 参数
 * <code>method</code> API方法。
 * <code>link</code> 短链接。
-* <code>groupid</code> 微信群邀请二维码的编号（去掉 "https://weixin.qq.com/g/" 的剩余部分）。
+* <code>groupid</code> 微信群邀请二维码的编号（去掉 "https://weixin.qq.com/g/" 后的剩余部分）。
 * <code>note</code> 备注信息。
 * <code>count</code> 当前二维码的有效访问次数。
 * <code>totalcount</code> 短链接总计有效访问次数。
 * <code>expire</code> 当前二维码的过期时间（unix时间戳）。
- * 微信群邀请二维码默认7天有效，通过API添加邀请码时，系统会为其6天23小时30分钟的生命周期。
+** 微信群邀请二维码默认7天有效，通过API添加邀请码时，系统会为其设置6天23小时30分钟的生命周期。
 * <code>flow</code> 候补二维码序列，格式：<code>编号&过期时间</code> 。
 
 **以下API中参数缺一不可**
+#### 以json列出所有短链接
+<code>GET qrcodeapi.php?method=query</code>
 #### 创建新短链接
 <code>GET qrcodeapi.php?method=create&groupid={groupid}&note={note}</code>
 #### 删除短链接
