@@ -30,5 +30,5 @@
 #### 为短链接增加邀请码
 <code>GET qrcodeapi.php?method=add&link={link}&groupid={groupid}</code>
 #### 为短链接移除邀请码
-<code>GET qrcodeapi.php?methodremove&link={link}&groupid={groupid}</code>
+<code>GET qrcodeapi.php?method=remove&link={link}&groupid={groupid}</code>
 * 达到访问次数阈值和过期邀请码会自动删除，无需额外处理。
